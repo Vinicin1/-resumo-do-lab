@@ -22,7 +22,7 @@ Logo, é possível usufluir dos serviços de nuvem para outras operações, cria
 
 ### CAPEX vs OPEX – Diferenças e Impacto na Computação em Nuvem
 
-- Capex:
+- CAPEX:
   
   CAPEX são despesas de capital, ou seja, investimentos em bens físicos ou infraestrutura de longo prazo.
 
