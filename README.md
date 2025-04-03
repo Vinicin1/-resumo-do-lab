@@ -1,6 +1,8 @@
 # -resumo-do-lab
 Este repositório é dedicado ao resumo de lições aprendidas durante o desenvolvimento do LAB da DIO.
 
+# Introdução a computação em Nuvem:
+
 ## O que é computação em nuvem? 
 
 Computação em nuvem ou Cloud Computing, pode ser definida como um modelo de de fornecimento de serviços de tecnologia da informação (TI) pela internet. Onde empresas,usuários acessem recursos como servidores,aramazenamentos,baco de dados,rede,software sem a necessidade de possuir uma estrutura física propria. 
@@ -93,6 +95,9 @@ IaaS (Infrastructure as a Service):
 
 A IaaS (Infrastructure as a Service) é um modelo específico dentro da computação em nuvem. 
  Onde fornece recursos de infraestrutura sob demanda,como servidores,aramazenamento,rede e máquinas virtuais,sem que a empresa precise de comprar ou manter hardware físico.
+
+
+## Beneficios de se trabalhar com Microsoft Azure:
 
 
 
