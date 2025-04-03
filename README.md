@@ -7,7 +7,7 @@ Este repositório é dedicado ao resumo de lições aprendidas durante o desenvo
 
 Computação em nuvem ou Cloud Computing, pode ser definida como um modelo de de fornecimento de serviços de tecnologia da informação (TI) pela internet. Onde empresas,usuários acessem recursos como servidores,aramazenamentos,baco de dados,rede,software sem a necessidade de possuir uma estrutura física propria. 
 
-## Quais são os tipos de estruturas?
+## Modelos de implantação Nuvem?
 
 ### On-Premise (Local):
 O modelo On-Premise faz referencia a um modelo de infraestrutura física com uma abordagem "tradicional" onde uma organização  mantém e gerência toda a infraestrtura de TI,incluindo todo seus recursos de TI sendo; Servidores,redes,sistemas. Em vez de alugar ou terceirizar recursos para provedores de Nuvem.
@@ -19,7 +19,6 @@ O modelo Cloud (computação em Nuvem) é um modelo de fornecimento de serviços
  O modelo hibrido é o melhor dos dois mundos. É a união On-Premise + Modelo cloud. Pois neste modelo se beneficia da Nuvem Pública E da Nuvem privada(Local).
 
 Logo, é possível usufluir dos serviços de nuvem para outras operações, criando uma combinação de recursos internos e externos. Como por exemplo; Armazenar e processar dados Sensíveis em uma nuvem privada,garantindo maior segurança e controle.
-
 
 ### CAPEX vs OPEX – Diferenças e Impacto na Computação em Nuvem
 
@@ -33,7 +32,6 @@ Logo, é possível usufluir dos serviços de nuvem para outras operações, cria
  Construção ou expansão de um prédio para TI
  Compra de licenças de software vitalícias
  Aquisição de storage físico (HDDs, SSDs, NAS)
-
  
 - OPEX:
   
@@ -45,18 +43,6 @@ Logo, é possível usufluir dos serviços de nuvem para outras operações, cria
  Custos de energia e manutenção de data centers
  Salários da equipe de TI Serviços de terceiros (Suporte, Consultoria, Segurança)
 
-
-
-
-
-
-
-
-
-
-
-
- 
 ## O que é "As a Service"?
 
 Podemos definir como um modelo de entrega de tecnologia onde serviços são oferecidos sob demanda via Internet, em vez de serem adquiridos e mantidos localmente. As tecnologias oferecidas pode sem ser como; recursos,plataformas ou softwares sendo fornecidos sob demanda pela internet.
@@ -91,10 +77,27 @@ Uma Zona de Disponibilidade (AZ - Availability Zone) é uma área isolada dentro
  -  Cada AZ tem energia, refrigeração e rede independentes, garantindo que uma falha em uma zona não afete as outras.
 
 
-IaaS (Infrastructure as a Service):
+### Modelos de serviço Nuvem:
+
+Os serviços em nuvem são divididos em três categorias principais:
+
+- IaaS (Infrastructure as a Service):
 
 A IaaS (Infrastructure as a Service) é um modelo específico dentro da computação em nuvem. 
  Onde fornece recursos de infraestrutura sob demanda,como servidores,aramazenamento,rede e máquinas virtuais,sem que a empresa precise de comprar ou manter hardware físico.
+
+- PaaS (Platform as a Service):
+
+Ambiente de desenvolvimento completo, com ferramentas para criar, testar e implantar aplicações sem gerenciar servidores.
+
+Exemplo: Azure App Services, Google App Engine, AWS Elastic Beanstalk.
+
+- SaaS (Software as a Service):
+
+Softwares prontos para uso, acessíveis via navegador.
+
+Exemplo: Microsoft 365, Google Workspace, Dropbox.
+ 
 
 
 ## Beneficios de se trabalhar com Microsoft Azure:
