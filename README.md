@@ -48,7 +48,7 @@ Logo, é possível usufluir dos serviços de nuvem para outras operações, cria
 Podemos definir como um modelo de entrega de tecnologia onde serviços são oferecidos sob demanda via Internet, em vez de serem adquiridos e mantidos localmente. As tecnologias oferecidas pode sem ser como; recursos,plataformas ou softwares sendo fornecidos sob demanda pela internet.
  Neste modelo permite que emrpesas e indivíduos *paguem apenas pelo que utilizam* aumentando a flexibilidade,escalabilidade e reduzindo custos operacionais. Ele abrange desde infraestrutura *(IaaS)* e plataformas de desenvolvimento *(PaaS)* até softwares prontos para uso *(SaaS)* e outros serviços especializados.
 
-###O que é plataform?
+### O que é plataform?
 
 Pode ser definida como um ambiente oline que fornece recursos para o desenvolvimento,teste,implantação e gerenciamento de aplicativos,sem que o usuário precise gerenciar servidores,armazenamento ou infraestrutura de rede.
 
