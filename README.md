@@ -436,9 +436,15 @@ A segurança na nuvem é uma responsabilidade dividida entre o provedor e o clie
 | Gerenciamento de identidades e acessos      | ❌| ✅ |
 | Proteção de dados sensíveis      | ❌| ✅ |
 
-### 5. Governança na Computação em Nuvem:
+### 5. Governança e Gerenciabilidade na Computação em Nuvem:
 
-A governança na computação em nuvem refere-se ao conjunto de políticas, processos e controles estabelecidos para garantir que o uso dos recursos na nuvem esteja alinhado com os objetivos estratégicos da organização, garantindo segurança, conformidade, eficiência operacional e otimização de custos.
+A computação em nuvem exige um gerenciamento eficiente e um conjunto de políticas bem estruturadas para garantir segurança, conformidade, otimização de custos e controle sobre os recursos.
+
+- governança na computação em nuvem refere-se ao conjunto de políticas, processos e controles estabelecidos para garantir que o uso dos recursos na nuvem esteja alinhado com os objetivos estratégicos da organização, garantindo segurança, conformidade, eficiência operacional e otimização de custos.
+  
+- gerenciabilidade na computação em nuvem refere-se à capacidade de monitorar, controlar e otimizar recursos, serviços e aplicações na nuvem de maneira eficiente. Isso envolve ferramentas e práticas que garantem visibilidade, automação, governança e resposta rápida a incidentes, permitindo que empresas mantenham alta performance, segurança e custo-benefício.
+
+  Juntas, governança e gerenciabilidade formam a base para uma infraestrutura de TI segura, eficiente e escalável.
 
 A governança na nuvem pode ser dividida em quatro pilares principais:
 
@@ -450,4 +456,18 @@ A governança na nuvem pode ser dividida em quatro pilares principais:
 | Monitoramento e Auditoria | Visibilidade e controle de atividades | Azure Monitor, Azure Log Analytics|
 
 Logo, a  governança na computação em nuvem é essencial para garantir segurança, conformidade, eficiência e controle de custos. O Microsoft Azure oferece um conjunto robusto de ferramentas para ajudar empresas a implementar políticas de segurança, monitoramento e gestão financeira, garantindo um ambiente confiável e bem estruturado.
+
+5.1. Diferença Entre Governança e Gerenciabilidade:
+
+|Aspecto |	Governança	| Gerenciabilidade |
+|---------------------|-----------------|-------------------|
+Objetivo |	Garantir que o uso da nuvem esteja alinhado com os objetivos do negócio e conformidade. |	Monitorar, otimizar e administrar os recursos na nuvem.|
+Foco |	Estratégico|	Operacional|
+Atuação	|Define políticas e diretrizes para uso da nuvem.|	Utiliza ferramentas para aplicar e garantir que as políticas sejam seguidas.
+Ferramentas no Azure	|Azure Policy, Azure Blueprints, Azure Cost Management.|	Azure Monitor, Azure Automation, Azure Security Center.
+Exemplo|	Criar uma política para que apenas máquinas virtuais em regiões específicas possam ser implantadas.|	Monitorar o desempenho dessas máquinas e escalá-las automaticamente, se necessário.|
+
+
+
+
 
