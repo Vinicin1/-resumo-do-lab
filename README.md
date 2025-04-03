@@ -59,13 +59,13 @@ Exemplos: Microsoft Azure App Service,Aws.
 
 Uma Região de Nuvem (Cloud Region) é um conjunto geográfico onde os provedores de nuvem (AWS, Azure, Google Cloud) oferecem seus serviços. Cada região contém várias zonas de disponibilidade e está fisicamente separada de outras regiões.
 
-Exemplos de Regiões:
+- Exemplos de Regiões:
 
-AWS: us-east-1 (Norte da Virgínia), sa-east-1 (São Paulo)
+- AWS: us-east-1 (Norte da Virgínia), sa-east-1 (São Paulo)
 
-Azure: Brazil South (São Paulo), East US
+- Azure: Brazil South (São Paulo), East US
 
-Google Cloud: southamerica-east1 (São Paulo), us-west1 (Oregon)
+- Google Cloud: southamerica-east1 (São Paulo), us-west1 (Oregon)
 
 Diante disso a importância das regiões onde se escolhe armazenar seus Dados,respeitando leis e regulamentaçõees locais. Pode melhorar a *latência* garantindo que usuários acessem serviços e servidores mais próximos. Somando-se a isso, oferecem redundância,caso uma região tenha problemas, loutra pdoe ser usada como Backup.
 
