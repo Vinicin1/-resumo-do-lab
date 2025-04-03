@@ -169,7 +169,7 @@ O Azure oferece SLAs diferentes para cada serviço. Diante disso, é importante 
 
  **Exemplo:** Uma empresa que hospeda um site no Azure App Service pode escolher um plano com SLA de 99,95%, garantindo que o site fique no ar quase o tempo todo.
 
-### 1.3. Confiabilidade na Nuvem:
+### 1.2. Confiabilidade na Nuvem:
 
 A confiabilidade na computação em nuvem refere-se à capacidade dos serviços de funcionarem de forma consistente, segura e previsível, garantindo disponibilidade e desempenho conforme os acordos de nível de serviço (SLA – Service Level Agreement).
 
@@ -178,15 +178,16 @@ A confiabilidade na computação em nuvem refere-se à capacidade dos serviços 
 - Alta Disponibilidade (High Availability – HA) → Sistemas projetados para operar continuamente, minimizando tempo de inatividade.
 - Resiliência → Capacidade de se recuperar rapidamente de falhas, garantindo a continuidade dos serviços.
 - Tolerância a Falhas (Fault Tolerance) → Capacidade de um sistema continuar funcionando mesmo quando ocorrem falhas em componentes individuais.
+  
+> [!IMPORTANT]
+ No serviço oferecido pela **Azure Storage** e **AWS S3** replicam dados automaticamente entre diferentes regiões, garantindo que informações permaneçam acessíveis mesmo em caso de falha em um data center.
 
-📌 No serviço oferecido pela **Azure Storage** e **AWS S3** replicam dados automaticamente entre diferentes regiões, garantindo que informações permaneçam acessíveis mesmo em caso de falha em um data center.
+### 1.3. A confiabilidade é garantida?
 
-### 1.4. Confiabilidade é garantida?
-
-Os provedores de nuvem utilizam diversas estratégias para aumentar a confiabilidade dos serviços:
+Os provedores de nuvem utilizam diversas estratégias para aumentar a confiabilidade dos serviços. Dentre elas;
 
 -  **Replicação de Dados:**
--  
+  
 Os dados são copiados para vários servidores e data centers. Logo Evitasse a perda de informações em caso de falha de hardware.
 
 **Exemplo:** O Azure Storage oferece replicação Local, Zonada e Geográfica.
@@ -210,7 +211,7 @@ Serviços são distribuídos em múltiplas regiões para evitar indisponibilidad
 **Exemplo:** O Azure Traffic Manager direciona usuários para a região mais saudável e próxima.
 
 - **SLAs e Garantias de Disponibilidade:**
-- 
+
 Os provedores definem percentuais de uptime garantidos nos contratos de SLA.
 
 **Exemplo de SLA no Azure:**
@@ -222,36 +223,40 @@ Os provedores definem percentuais de uptime garantidos nos contratos de SLA.
 
 **99,999%** → Permite até 5,26 minutos de indisponibilidade por ano.
 
+### 1.4. O que é previsibilidade na Nuvem?
+
+A previsibilidade na computação em nuvem refere-se à capacidade de antecipar e **controlar o desempenho**, os **custos** e a **disponibilidade dos serviços**, garantindo uma experiência estável para usuários e empresas.
+
+Para que a previsibilidade seja exercida, é necessário que haja uma garantia de que os recursos computacionais funcionem de maneira consistente, sem variações inesperadas. Além disso, deve ser possível estimar os gastos para evitar surpresas na fatura da nuvem. Todos os serviços contratados devem ser projetados para atender aos SLAs e evitar quedas inesperadas.
+
+Um exemplo: 
+Um e-commerce que usa Azure App Service precisa garantir que seu site tenha tempo de resposta previsível, independentemente do número de acessos. Através da escalabilidade automática e do monitoramento, é possível garantir essa estabilidade.
 
 
-
-
-### Escalabilidade:
+### 2. Escalabilidade:
 
 A escalabilidade da nuvem é uma das principais vantagens da computação em nuvem, permitindo que recursos computacionais sejam ajustados conforme a demanda, de forma automática ou manual. Esse conceito garante eficiência operacional, otimização de custos e melhor desempenho para aplicações e serviços.
  Logo seu principal objetivo é garantir que sistemas e aplicações funcionem de maneira eficiente e otimizada, independente do volume de acessos ou carga de trabalho.
 
-
-
-**1.1. Escalabilidade Vertical (Scale Up / Down):**
+**Escalabilidade Vertical (Scale Up / Down):**
 
  Consiste em aumentar ou reduzir a capacidade de um único servidor (exemplo: adicionar mais memória RAM, CPU ou armazenamento).
 
 **Exemplo:** Em um banco de dados que começa a ter muitas requisições, pode-se aumentar a capacidade da máquina virtual onde ele está hospedado.
 
-**1.2. Escalabilidade Horizontal (Scale Out / In):**
+**Escalabilidade Horizontal (Scale Out / In):**
 
 Refere-se à adição ou remoção de servidores para distribuir a carga de trabalho.
 
 **Exemplo:** Um site de e-commerce que recebe muitos acessos durante a Black Friday pode adicionar novos servidores automaticamente para lidar com o aumento do tráfego.
 
-**1.3. Escalabilidade Automática (Auto Scaling)**
+**Escalabilidade Automática (Auto Scaling):**
 
 Usa algoritmos e monitoramento para ajustar recursos automaticamente conforme a demanda, sem necessidade de intervenção humana.
 
 **Exemplo:** O Azure AutoScale pode adicionar servidores automaticamente quando um site recebe mais tráfego e removê-los quando o tráfego diminui.
 
-### Escalabilidade Aplicada no Microsoft Azure:
+### 2.1. Escalabilidade Aplicada no Microsoft Azure:
 
 O Microsoft Azure oferece diversas ferramentas para escalabilidade, incluindo:
 
@@ -259,13 +264,12 @@ O Microsoft Azure oferece diversas ferramentas para escalabilidade, incluindo:
 
 - Azure Kubernetes Service (AKS): Gerencia containers e permite escalabilidade automática.
 
- - Azure App Service Auto Scaling: Ajusta dinamicamente o número de instâncias de um aplicativo baseado na demanda.
+- Azure App Service Auto Scaling: Ajusta dinamicamente o número de instâncias de um aplicativo baseado na demanda.
 
 **Exemplo:**
  Uma aplicação pode ser configurada para criar novas instâncias automaticamente quando a CPU atinge 80% de uso e removê-las quando a carga cai para menos de 40%.
 
-
-## 1.1. Elasticidade na Computação em Nuvem:
+### 3. Elasticidade na Computação em Nuvem:
 
 A elasticidade na computação em nuvem é a capacidade de ajustar automaticamente os recursos computacionais conforme a demanda aumenta ou diminui, garantindo eficiência operacional e controle de custos.
 
@@ -291,7 +295,7 @@ Durante a Black Friday, um site de e-commerce pode receber milhões de acessos s
 
 Se um aplicativo hospedado no **Azure App Service** receber um alto volume de acessos, o **Auto Scaling** cria novas instâncias automaticamente para evitar lentidão. Quando o tráfego reduz, ele desativa as instâncias extras para economizar custos.
 
-## 1.2. Elasticidade no Microsoft Azure:
+### 3.1. Elasticidade no Microsoft Azure:
 
 O Microsoft Azure oferece vários serviços que permitem elasticidade automática:
 
@@ -301,11 +305,149 @@ O Microsoft Azure oferece vários serviços que permitem elasticidade automátic
 
 **Exemplo:** Se um aplicativo hospedado no Azure App Service receber um alto volume de acessos, o Auto Scaling cria novas instâncias automaticamente para evitar lentidão. Quando o tráfego reduz, ele desativa as instâncias extras para economizar custos.
 
-## O Que é Confiabilidade na Nuvem?
+### 4. Segurança na Computação em Nuvem (Introdução):
+
+ A segurança na computação em nuvem pode ser definida como um conjunto de práticas, tecnologias e políticas que garantem a proteção de dados, aplicações e infraestruturas contra acessos não autorizados, ameaças cibernéticas e falhas operacionais. Como a nuvem é amplamente utilizada por empresas de todos os setores, garantir um ambiente seguro é essencial para evitar vazamentos de dados, ataques cibernéticos e prejuízos financeiros.
+
+### 4.1 Princípios Fundamentais da Segurança na Nuvem:
 
 
+- **Confidencialidade:
+
+Garante que apenas usuários e sistemas autorizados tenham acesso às informações sensíveis. Técnicas como criptografia, autenticação multifator (MFA) e controle de acesso baseado em identidade (IAM) são utilizadas para restringir o acesso.
+
+- **Integridade:**
+  
+Assegura que os dados não sejam alterados indevidamente, seja por erro humano, ataques maliciosos ou falhas no sistema. Para isso, são aplicadas assinaturas digitais, hashing e mecanismos de verificação de integridade.
+
+- **Disponibilidade:**
+  
+Mantém os serviços e dados acessíveis sempre que necessário. Isso envolve a implementação de redundância, recuperação de desastres e mitigação de ataques DDoS (Distributed Denial of Service).
+
+**Exemplo:** O Azure Storage pode aplicar criptografia automática nos dados, garantindo que apenas usuários autorizados possam acessá-los.
 
 
+### 4.2. Principais Ameaças à Segurança na Nuvem:
 
 
- 
+ Os ambientes em nuvem estão sujeitos a diversas ameaças que podem comprometer a segurança dos dados e serviços. Algumas das principais incluem:
+
+- **Ataques Cibernéticos:**
+
+Os ataques mais comuns incluem:
+
+DDoS (Distributed Denial of Service) → Tentativa de sobrecarregar um serviço para torná-lo indisponível.
+
+Malware e Ransomware → Software malicioso que pode roubar ou bloquear dados até o pagamento de um resgate.
+
+Phishing → Engenharia social para enganar usuários e obter credenciais de acesso.
+
+
+-  Vazamento e Roubo de Dados
+Ocorre quando dados sensíveis são acessados ou divulgados sem autorização. Isso pode acontecer devido a falhas de configuração, senhas fracas ou acessos não monitorados.
+
+- Erros de Configuração e Exposição Acidental
+Um erro comum na nuvem é a configuração inadequada de permissões e segurança. Por exemplo, um bucket de armazenamento aberto sem autenticação pode expor informações sigilosas para qualquer pessoa na internet.
+
+- Ameaças Internas
+Colaboradores mal-intencionados ou usuários com credenciais comprometidas podem causar danos, seja de forma intencional ou acidental.
+
+- Vulnerabilidades em APIs e Aplicações
+Muitas aplicações em nuvem dependem de APIs que, se não forem protegidas corretamente, podem ser exploradas por atacantes para invadir sistemas.
+
+**Exemplo:** O Azure API Management permite configurar autenticação e monitoramento para evitar acessos não autorizados.
+
+### 4.3. Principais Ameaças à Segurança na Nuvem:
+
+Os provedores de nuvem, como a Microsoft Azure, oferecem diversas soluções para mitigar riscos e proteger dados. Algumas das principais práticas e tecnologias incluem:
+
+- Criptografia de Dados:
+
+A criptografia protege os dados contra acessos não autorizados, tanto em repouso (armazenamento) quanto em trânsito (transferência de dados).
+
+> [!IMPORTANT]
+ > No Azure:
+
+>Azure Disk Encryption → Criptografa discos de máquinas virtuais.
+
+>Azure Key Vault → Armazena chaves de criptografia com segurança.
+
+>TLS e SSL → Protegem a comunicação entre sistemas e usuários.
+
+-  Controle de Acesso e Autenticação:
+
+O gerenciamento de identidade e controle de acesso evita que usuários não autorizados acessem sistemas críticos.
+
+> [!IMPORTANT]
+ > No Azure:
+
+>Azure Active Directory (Azure AD) → Gerencia identidades e autenticação.
+
+>Multi-Factor Authentication (MFA) → Adiciona uma camada extra de segurança no login.
+
+>Role-Based Access Control (RBAC) → Restringe acessos conforme as funções do usuário.
+
+- Segurança de Rede: 
+Proteger a comunicação entre servidores e usuários é essencial para evitar ataques cibernéticos.
+
+> [!IMPORTANT]
+ > No Azure:
+
+> Azure Firewall → Filtra tráfego malicioso e impede acessos indevidos.
+
+> Azure DDoS Protection → Protege contra ataques de negação de serviço.
+
+> Network Security Groups (NSG) → Define regras para bloquear ou permitir tráfego.
+
+- Monitoramento e Resposta a Incidentes:
+  
+O monitoramento contínuo ajuda a identificar e responder a ameaças antes que causem danos.
+
+> [!IMPORTANT]
+ > No Azure:
+
+>Azure Security Center → Detecta vulnerabilidades e recomenda ações corretivas.
+
+>Microsoft Defender for Cloud → Protege cargas de trabalho contra ameaças avançadas.
+
+>Azure Sentinel → SIEM para análise de logs e resposta automatizada a incidentes.
+
+- Backup e Recuperação de Desastres:
+Ter um plano de backup e recuperação de desastres evita a perda definitiva de dados.
+
+> [!IMPORTANT]
+ > No Azure:
+
+>Azure Backup → Garante cópias automáticas dos dados.
+
+>Azure Site Recovery → Replica serviços e bancos de dados para recuperação rápida.
+
+### 4.4. Segurança no Modelo de Responsabilidade Compartilhada:
+
+A segurança na nuvem é uma responsabilidade dividida entre o provedor e o cliente. A Microsoft adota o modelo de segurança compartilhada, onde o Azure protege a infraestrutura, enquanto o cliente é responsável por configurar a segurança dos serviços utilizados.
+
+
+| **Responsablidade**  | **Microsoft Azure** | **Cliente** |
+|---------------------|-----------------|-------------------|
+| Segurança física dos data centers	      | ✅ | ❌ |
+| Proteção contra ataques DDoS	 | ✅ | ❌ |
+| Atualizações de hardware e software  | ✅ | ❌|
+| Configuração de redes e firewalls	      | ❌| ✅ |
+| Gerenciamento de identidades e acessos      | ❌| ✅ |
+| Proteção de dados sensíveis      | ❌| ✅ |
+
+### 5. Governança na Computação em Nuvem:
+
+A governança na computação em nuvem refere-se ao conjunto de políticas, processos e controles estabelecidos para garantir que o uso dos recursos na nuvem esteja alinhado com os objetivos estratégicos da organização, garantindo segurança, conformidade, eficiência operacional e otimização de custos.
+
+A governança na nuvem pode ser dividida em quatro pilares principais:
+
+| **Pilar**  | **Descrição** | **Ferramentas no Azure** |
+|---------------------|-----------------|-------------------|
+| Segurança e Conformidade      | Proteção de dados e aderência a regulamentações | Azure Security Center, Azure Policy |
+| Gestão de Identidade e Acesso | Controle de usuários e permissões | Azure AD, Role-Based Access Control (RBAC) |
+| Gestão Financeira e Custos | Monitoramento e otimização de despesas | Azure Cost Management, Azure Budgets|
+| Monitoramento e Auditoria | Visibilidade e controle de atividades | Azure Monitor, Azure Log Analytics|
+
+Logo, a  governança na computação em nuvem é essencial para garantir segurança, conformidade, eficiência e controle de custos. O Microsoft Azure oferece um conjunto robusto de ferramentas para ajudar empresas a implementar políticas de segurança, monitoramento e gestão financeira, garantindo um ambiente confiável e bem estruturado.
+
