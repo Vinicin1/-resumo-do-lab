@@ -1,29 +1,29 @@
 # -resumo-do-lab
 Este repositório é dedicado ao resumo de lições aprendidas durante o desenvolvimento do LAB da DIO.
 
-# Introdução a computação em Nuvem:
+# Introdução a computação em Nuvem: O que é computação em nuvem?
 
-## O que é computação em nuvem? 
 
-Computação em nuvem ou Cloud Computing, pode ser definida como um modelo de de fornecimento de serviços de tecnologia da informação (TI) pela internet. Onde empresas,usuários acessem recursos como servidores,aramazenamentos,banco de dados,rede,software sem a necessidade de possuir uma estrutura física propria. 
 
-## Modelos de implantação Nuvem?
+Computação em nuvem ou Cloud Computing, pode ser definida como um modelo de fornecimento de serviços de tecnologia da informação (TI) pela internet. Onde empresas,usuários acessem recursos como servidores,aramazenamentos,banco de dados,rede,software sem a necessidade de possuir uma estrutura física propria. 
 
-### On-Premise (Local):
+## Quais os modelos de implantação Nuvem?
+
+- **On-Premise (Local):**
 
 O modelo On-Premise faz referência a um modelo de infraestrutura física com uma abordagem "tradicional" onde uma organização  mantém e gerência toda a infraestrtura de TI,incluindo todo seus recursos de TI sendo; Servidores,redes,sistemas. Em vez de alugar ou terceirizar recursos para provedores de Nuvem.
 
-### Modelo Cloud (Nuvem):
+- **Modelo Cloud (Nuvem):**
 
 O modelo Cloud (computação em Nuvem) é um modelo de fornecimento de serviços de TI que permite acessar e usar recursos computacionais pela internet, sem a necessidade de manter uma infraestrutura fÍsica própria. Isso unclui armazenamento, servidores,bancos de dados,redes e softwares.
 
-### Modelo Hybrid: 
+- **Modelo Híbrido (Hybrid):**
 
- O modelo hÍbrido é o melhor dos dois mundos. É a união On-Premise + Modelo cloud. Pois neste modelo se beneficia da Nuvem Pública E da Nuvem privada(Local).
+ O modelo híbrido é o melhor dos dois mundos. É a união On-Premise + Modelo cloud. Pois neste modelo se beneficia da Nuvem Pública E da Nuvem privada(Local).
 
 Logo, é possível usufluir dos serviços de nuvem para outras operações, criando uma combinação de recursos internos e externos. Como por exemplo; Armazenar e processar dados Sensíveis em uma nuvem privada,garantindo maior segurança e controle.
 
-### CAPEX vs OPEX – Diferenças e Impacto na Computação em Nuvem:
+## CAPEX vs OPEX – Diferenças e Impacto na Computação em Nuvem:
 
 - **CAPEX:**
   
@@ -47,16 +47,39 @@ Logo, é possível usufluir dos serviços de nuvem para outras operações, cria
  Custos de energia e manutenção de data centers
  Salários da equipe de TI Serviços de terceiros (Suporte, Consultoria, Segurança)
 
-## O que é "As a Service"?
+## Modelos de serviço Nuvem:
 
-Podemos definir como um modelo de entrega de tecnologia onde serviços são oferecidos sob demanda via Internet, em vez de serem adquiridos e mantidos localmente. As tecnologias oferecidas podem sem ser como; recursos,plataformas ou softwares sendo fornecidos sob demanda pela internet.
- Neste modelo permite que emrpesas e indivíduos *paguem apenas pelo que utilizam* aumentando a flexibilidade,escalabilidade e reduzindo custos operacionais. Ele abrange desde infraestrutura **(IaaS)** e plataformas de desenvolvimento **(PaaS)** até softwares prontos para uso **(SaaS)** e outros serviços especializados.
+### O que é o modelo "As a Service"?
 
-### O que é "plataform"?
+Podemos definir como um modelo de entrega de tecnologia onde serviços são oferecidos sob demanda via Internet, em vez de serem adquiridos e mantidos localmente. As tecnologias oferecidas podem ser como; recursos,plataformas ou softwares que são fornecidos sob demanda pela internet.
+ Neste modelo permite que empresas e indivíduos **paguem apenas pelo que utilizam** aumentando a flexibilidade,escalabilidade e reduzindo custos operacionais. Ele abrange desde infraestrutura **(IaaS)** e plataformas de desenvolvimento **(PaaS)** até softwares prontos para uso **(SaaS)** e outros serviços especializados.
+
+
+ ### O que é o termo "plataform"?
 
 Pode ser definida como um ambiente oline que fornece recursos para o desenvolvimento,teste,implantação e gerenciamento de aplicativos,sem que o usuário precise gerenciar servidores,armazenamento ou infraestrutura de rede.
 
 Exemplos: Microsoft Azure App Service,Aws.
+
+### Serviços nuvem:
+Os serviços em nuvem podem ser divididos em três categorias principais:
+
+- IaaS (Infrastructure as a Service):
+
+A IaaS (Infrastructure as a Service) é um modelo específico dentro da computação em nuvem. 
+ Onde fornece recursos de infraestrutura sob demanda,como servidores,aramazenamento,rede e máquinas virtuais,sem que a empresa precise de comprar ou manter hardware físico.
+
+- PaaS (Platform as a Service):
+
+Ambiente de desenvolvimento completo, com ferramentas para criar, testar e implantar aplicações sem gerenciar servidores.
+
+Exemplo: Azure App Services, Google App Engine, AWS Elastic Beanstalk.
+
+- SaaS (Software as a Service):
+
+Softwares prontos para uso, acessíveis via navegador.
+
+Exemplo: Microsoft 365, Google Workspace, Dropbox.
 
 ### O que são Cloud Regions (Regiões de Nuvem)?
 
@@ -80,43 +103,20 @@ Uma Zona de Disponibilidade (AZ - Availability Zone) é uma área isolada dentro
  -  Cada AZ tem energia, refrigeração e rede independentes, garantindo que uma falha em uma zona não afete as outras.
 
 
-### Modelos de serviço Nuvem:
-
-Os serviços em nuvem são divididos em três categorias principais:
-
-- IaaS (Infrastructure as a Service):
-
-A IaaS (Infrastructure as a Service) é um modelo específico dentro da computação em nuvem. 
- Onde fornece recursos de infraestrutura sob demanda,como servidores,aramazenamento,rede e máquinas virtuais,sem que a empresa precise de comprar ou manter hardware físico.
-
-- PaaS (Platform as a Service):
-
-Ambiente de desenvolvimento completo, com ferramentas para criar, testar e implantar aplicações sem gerenciar servidores.
-
-Exemplo: Azure App Services, Google App Engine, AWS Elastic Beanstalk.
-
-- SaaS (Software as a Service):
-
-Softwares prontos para uso, acessíveis via navegador.
-
-Exemplo: Microsoft 365, Google Workspace, Dropbox.
- 
-
-
 ## Beneficios de se trabalhar com Nuvem:
 
 ### Alta disponibilidade (High Availability - HA):
 
-A alta disponibilidade é a capacidade de um sistema continuar funcionando sem interrupções significativa, assim garantindo o minímimo de tempo de inatividade (downtime).
+A alta disponibilidade é a capacidade de um sistema continuar funcionando sem interrupções significativa, assim garantindo o minímo de tempo de inatividade (downtime).
 
 Ela é um conceito essencial na computação em Nuvem que garante que sistemas,aplicações e serviços permaneçam operacionais mesmo diante de falhas ou picos de demanda.
-( A nuvem permite distribuir cargas de trabalho entre diferentes servidores  e data centers, reduzindo o risco de indiponibilidaee e aumentando a resiliência dos sistemas.)
+( A nuvem permite distribuir cargas de trabalho entre diferentes servidores  e data centers, reduzindo o risco de indiponibilidade e aumentando a resiliência dos sistemas.)
   
 ### 1. SLA, ou Acordo de Nível de Serviço (service Level Agreement):
 
 É um contrato que define os níveis de qualidade, disponibilidade e suporte que um provedor de serviços em nuvem deve garantir aos seus clientes.
 
- O **SLA** estabelece métricas e compromissos que a emprssa fornecedora de serviços precisa cumprir garantindo um padrão de **desempenho e confiabilidade.**
+ O **SLA** estabelece métricas e compromissos que a empresa fornecedora de serviços precisa cumprir garantindo um padrão de **desempenho e confiabilidade.**
  Diante disso, o principal objetivo é garantir que os serviços contratados possuam alta disponilidade esperada para serviços como maquinas virtuais,banco de dados e redes.
 
  - Calculo da disponibilidade:
